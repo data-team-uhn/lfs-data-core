@@ -22,19 +22,11 @@
 
   <parent>
     <groupId>io.uhndata.cards</groupId>
-    <artifactId>cards-parent</artifactId>
+    <artifactId>lfs-resources</artifactId>
     <version>0.9-SNAPSHOT</version>
   </parent>
 
-  <artifactId>lfs-resources</artifactId>
-  <packaging>pom</packaging>
-  <name>LFS Resources</name>
-  <description>A collection of questionnaires, subject types and other LFS specific code.</description>
-
-  <modules>
-    <module>clinical-data</module>
-    <module>tissue-metrix</module>
-    <module>variants</module>
-    <module>feature</module>
-  </modules>
+  <artifactId>cards4lfs</artifactId>
+  <packaging>slingosgifeature</packaging>
+  <name>Cards4LFS</name>
 </project>
