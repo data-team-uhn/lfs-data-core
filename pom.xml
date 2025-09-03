@@ -31,8 +31,7 @@
   <description>A collection of questionnaires, subject types and other LFS specific code.</description>
 
   <modules>
-    <module>clinical-data</module>
-    <module>tissue-metrix</module>
+    <module>resources</module>
     <module>feature</module>
   </modules>
 </project>

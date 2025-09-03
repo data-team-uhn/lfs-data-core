@@ -39,10 +39,6 @@
       "start-order":"26"
     },
     {
-      "id":"${project.groupId}:lfs-resources-tissue-metrix:${project.version}",
-      "start-order":"26"
-    },
-    {
       "id":"${project.groupId}:cards-variants:${project.version}",
       "start-order":"26"
     }
