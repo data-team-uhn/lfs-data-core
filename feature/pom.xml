@@ -21,11 +21,11 @@
 
   <parent>
     <groupId>io.uhndata.cards</groupId>
-    <artifactId>lfs-resources</artifactId>
-    <version>0.9.33-SNAPSHOT</version>
+    <artifactId>lfs-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>cards4lfs</artifactId>
   <packaging>slingosgifeature</packaging>
-  <name>Cards4LFS</name>
+  <name>LFS Data Core</name>
 </project>

@@ -19,27 +19,27 @@
 {
   "bundles":[
     {
-      "id":"${project.groupId}:cards-patient-subject-type:${project.version}",
+      "id":"${project.groupId}:cards-patient-subject-type:${cards.version}",
       "start-order":"20"
     },
     {
-      "id":"${project.groupId}:cards-tumor-subject-type:${project.version}",
+      "id":"${project.groupId}:cards-tumor-subject-type:${cards.version}",
       "start-order":"21"
     },
     {
-      "id":"${project.groupId}:cards-tumor-region-subject-type:${project.version}",
+      "id":"${project.groupId}:cards-tumor-region-subject-type:${cards.version}",
       "start-order":"22"
     },
     {
-      "id":"${project.groupId}:cards-statistics:${project.version}",
+      "id":"${project.groupId}:cards-statistics:${cards.version}",
       "start-order":"25"
     },
     {
-      "id":"${project.groupId}:lfs-resources-clinical-data:${project.version}",
+      "id":"${project.groupId}:cards-variants:${cards.version}",
       "start-order":"26"
     },
     {
-      "id":"${project.groupId}:cards-variants:${project.version}",
+      "id":"${project.groupId}:lfs-resources:${project.version}",
       "start-order":"26"
     }
   ]

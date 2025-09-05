@@ -21,13 +21,13 @@
 
   <parent>
     <groupId>io.uhndata.cards</groupId>
-    <artifactId>lfs-resources</artifactId>
-    <version>0.9.33-SNAPSHOT</version>
+    <artifactId>lfs-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>lfs-resources-clinical-data</artifactId>
+  <artifactId>lfs-resources</artifactId>
   <packaging>bundle</packaging>
-  <name>LFS Resources - Clinical Data</name>
+  <name>LFS Data Core - Clinical Data</name>
 
   <build>
     <plugins>
@@ -57,25 +57,25 @@
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>cards-patient-subject-type</artifactId>
-      <version>${project.version}</version>
+      <version>${cards.version}</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>cards-tumor-subject-type</artifactId>
-      <version>${project.version}</version>
+      <version>${cards.version}</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>cards-tumor-region-subject-type</artifactId>
-      <version>${project.version}</version>
+      <version>${cards.version}</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>cards-variants</artifactId>
-      <version>${project.version}</version>
+      <version>${cards.version}</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>

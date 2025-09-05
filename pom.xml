@@ -25,13 +25,55 @@
     <version>0.9.33-SNAPSHOT</version>
   </parent>
 
-  <artifactId>lfs-resources</artifactId>
+  <artifactId>lfs-parent</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>LFS Resources</name>
-  <description>A collection of questionnaires, subject types and other LFS specific code.</description>
+  <name>LFS Data Core</name>
+  <description>A CARDS based project for Li Fraumeni Syndrome.</description>
+
+  <scm>
+    <connection>scm:git:git://github.com/data-team-uhn/lfs-data-core.git</connection>
+    <developerConnection>scm:git:git@github.com:data-team-uhn/lfs-data-core.git</developerConnection>
+    <url>https://github.com/data-team-uhn/lfs-data-core/tree/main/</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <repositories>
+    <repository>
+      <id>local-generic-cards</id>
+      <name>Local Maven repository for generic CARDS JARs</name>
+      <url>file://${project.basedir}/../.cards-generic-mvnrepo/repository</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <properties>
+    <cards.version>0.9.33-SNAPSHOT</cards.version>
+    <cards.project>cards4lfs</cards.project>
+    <cards.defaultPermissionScheme>open</cards.defaultPermissionScheme>
+  </properties>
 
   <modules>
     <module>resources</module>
     <module>feature</module>
   </modules>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <arguments>-Pquick</arguments>
+          <preparationGoals>clean verify</preparationGoals>
+          <tagNameFormat>lfs-data-core-@{project.version}</tagNameFormat>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
