@@ -1,0 +1,16 @@
+{
+  "cardsinitial": [
+    {
+      "name": "PROJECT_NAME",
+      "value": "cards4lfs",
+      "conditions": null
+    }
+  ],
+  "proxy": [
+    {
+      "name": "CARDS_APP_NAME",
+      "value": "LFS Data Core",
+      "conditions": null
+    }
+  ]
+}
