@@ -22,7 +22,7 @@
   <parent>
     <groupId>io.uhndata.cards</groupId>
     <artifactId>cards-parent</artifactId>
-    <version>0.9.33-SNAPSHOT</version>
+    <version>0.9.33</version>
   </parent>
 
   <artifactId>lfs-parent</artifactId>
@@ -53,7 +53,7 @@
   </repositories>
 
   <properties>
-    <cards.version>0.9.33-SNAPSHOT</cards.version>
+    <cards.version>0.9.33</cards.version>
     <cards.project>cards4lfs</cards.project>
     <cards.defaultPermissionScheme>open</cards.defaultPermissionScheme>
   </properties>
